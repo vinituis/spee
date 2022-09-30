@@ -26,6 +26,8 @@ if(!isset($status)) {
 
     <?php include './mod/nav.php'; ?>
     
+    <a href="./mod/add_user.php" class="addUser">Adicionar usuário</a>
+
     <?php include './mod/tables.php'; ?>
 
 </body>

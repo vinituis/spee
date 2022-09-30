@@ -22,14 +22,39 @@ if(isset($_POST)){
             $_SESSION['nome'] = $_POST['nome'];
             $_SESSION['status'] = $row[3];
 
+            date_default_timezone_set('America/Belem');
+            $hora = date('H:i');
+            $data = date('d/m/Y');
+            $date = $data.' | '.$hora;
+
             if($row[3] == 'master') {
-                echo 'ok master';                
+                $sucesso = 'sim';
+                $logado = "INSERT INTO acessos (name, email, date, sucesso) VALUES ('$nome', '$email', '$date', '$sucesso')";
+                mysqli_query($conn, $logado);
+                
                 header('location: ../admin/home');
             }elseif($row[3] == 'adm'){
-                echo 'ok adm';
+                $sucesso = 'sim';
+                $logado = "INSERT INTO acessos (name, email, date, sucesso) VALUES ('$nome', '$email', '$date', '$sucesso')";
+                mysqli_query($conn, $logado);
+
                 header('location: ../admin/home');
-            }else{
+            }elseif($row[3] == 'user'){
+                $sucesso = 'sim';
+                $logado = "INSERT INTO acessos (name, email, date, sucesso) VALUES ('$nome', '$email', '$date', '$sucesso')";
+                mysqli_query($conn, $logado);
+
                 header('location: ../acesso/assistir');
+            }elseif($row[3] == 'block'){
+                $sucesso = 'não';
+                $logado = "INSERT INTO acessos (name, email, date, sucesso) VALUES ('$nome', '$email', '$date', '$sucesso')";
+                mysqli_query($conn, $logado);
+
+                unset($_SESSION['logado']);
+                $_SESSION['erro'] = 'Você está bloqueado';
+
+                var_dump($logado);
+                header('location: ../');
             }
             
             

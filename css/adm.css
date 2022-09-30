@@ -99,3 +99,26 @@ form.editUser input[type=submit] {
     cursor: pointer;
     font-weight: 700;
 }
+
+form.editUser input.block {
+    width: 80%;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: var(--cor-1);
+}
+
+form.editUser a {
+    color: #dedede;
+}
+
+.addUser {
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background-color: var(--cor-1);
+    color: #fff;
+    text-align: center;
+}

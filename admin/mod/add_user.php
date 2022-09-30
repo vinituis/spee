@@ -9,6 +9,7 @@ if(isset($_POST['submit'])){
 
     $sql = "INSERT INTO users (name, email, status) VALUES ('$nome', '$email', '$status')";
     mysqli_query($conn, $sql);
+    header('location: ../users');
 }
 
 ?>
@@ -26,8 +27,8 @@ if(isset($_POST['submit'])){
 <body>
     <form class="editUser" action="" method="POST">
         <h2>Insira os dados</h2>
-        <input type="nome" name="nome" placeholder="Nome">
-        <input type="email" name="email" placeholder="E-mail">
+        <input type="nome" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="E-mail" required>
         <input type="submit" name="submit" value="Inserir novo usuário">
         <a href="../users">Cancelar</a>
     </form>

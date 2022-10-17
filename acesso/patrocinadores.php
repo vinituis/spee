@@ -34,18 +34,11 @@ if(isset($_SESSION['logado'])){
 <body>
     <div class="header">
         <img src="../images/logo.png" alt="Logo">
-        <a href="./patrocinadores">Patrocinadores</a>
+        <a href="./assistir">Voltar</a>
     </div>
-    <h3 class="bemVindo">Bem vindo <span><?php echo $nome; ?></span>!</h3>
-    <div class="transmissao">
-        <iframe src="https://www.youtube.com/embed/NBQLCUJdV_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://app.sli.do/event/gKyojgHGHuKNcN1ckUHac2" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" title="Slido"></iframe>
+    <div class="container intern">
+        <?php include '../mod/partner.php'; ?>
     </div>
-
-    <div class="sair">
-        <a href="../sair" class="sair">Parar de assistir</a>
-    </div>
-
     <div class="footer">
         <p>Desenvolvido por <a href="https://www.linkedin.com/in/vinicius-fernandes-andrade/" target="_blank">Vinicius Fernandes</a></p>
     </div>

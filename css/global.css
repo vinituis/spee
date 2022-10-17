@@ -4,7 +4,7 @@
     --cor-1: #c25e14;
     --cor-2: #0e5221;
     --cor-3: #ff9600;
-
+    --branco: #fff;
 
     --fundo-1: rgba(14,81,33);
     --fundo-2: rgba(18,120,26);
@@ -28,4 +28,53 @@
 body {
     background: var(--fundo);
     background: linear-gradient(90deg, var(--fundo-1) 0%, var(--fundo-2) 100%);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--branco);
+    margin-top: 10rem;
+    padding: 1.5rem;
+}
+
+.container.intern {
+    margin-top: 0rem;
+    padding: 5rem 0;
+}
+
+.container h2 {
+    margin: 1rem 0;
+    color: var(--cor-2);
+}
+
+.partners {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.partners .partner {
+    margin: 0.5rem 0;
+}
+
+.partners .partner.master img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.partners .partner.normal img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.partners .partner.apoio img {
+    width: 100%;
+    max-width: 150px;
 }

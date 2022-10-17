@@ -11,6 +11,17 @@
     padding: 1rem;
 }
 
+.header a {
+    color: var(--branco);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--branco);
+}
+
+.header a:hover {
+    color: var(--cor-3);
+    border-bottom: 1px solid var(--cor-3);
+}
+
 .bemVindo {
     text-align: center;
     padding: 2rem 0 1rem 0;

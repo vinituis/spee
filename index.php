@@ -43,6 +43,15 @@ if(isset($_SESSION['logado'])){
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ1WL8DTWZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NQ1WL8DTWZ');
+    </script>
 
 </head>
 <body>

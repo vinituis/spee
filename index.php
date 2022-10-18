@@ -4,21 +4,25 @@ session_start();
 
 $erro = '';
 
+// verifico se existe o acompanhamento do jornalista
 if(isset($_GET['mod'])){
     if($_GET['mod'] == 'jorn'){
+        // se existir crio a session mod
         $_SESSION['mod'] = $_GET['mod'];
     }else{
+        // se não existir, defino como user
         $_SESSION['mod'] = 'user';
     }
     
-    
 }
 
+// verifico se existe algum erro
 if(isset($_SESSION['erro'])){
     $erro = '<span class="erro">'.$_SESSION['erro'].'</span>';
     unset($_SESSION['erro']);
 }
 
+// se já tiver realizado o login, redireciono para a página de assistir
 if(isset($_SESSION['logado'])){
     header('location: ./acesso/assistir');
 }else{

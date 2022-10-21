@@ -47,7 +47,7 @@ if(isset($_SESSION['logado'])){
     </div>
     <h3 class="bemVindo">Bem vindo <span><?php echo $nome; ?></span>!</h3>
     <div class="transmissao">
-        <iframe src="https://www.youtube.com/embed/NBQLCUJdV_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/FCbGFUP2w3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://app.sli.do/event/gKyojgHGHuKNcN1ckUHac2" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" title="Slido"></iframe>
     </div>
 

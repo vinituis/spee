@@ -1,6 +1,6 @@
 <?php
 
-$domain = 'http://spee.abimaq.org.br';
+$domain = 'http://localhost/spee';
 
 ?>
     <h2>Patrocínio master</h2>
